@@ -1,0 +1,54 @@
+{% extends 'tienda/base.html.twig' %}
+
+
+
+{% block body %}
+	<style type="text/css">
+		.navbar {
+			overflow: hidden;
+		    background-color: white;
+		    position: fixed; 
+		    top: 2; 
+		    text-align: center;
+
+		}
+		.navbar a {
+		    float: left;
+		    display: block;
+		    color:#47ad74;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		}
+        .o-navbar-fluid>.o-alert>a>p{
+        	background-color:#f8d7da;
+        	color: #a02129;
+        	margin-top: 20px;
+        	margin-bottom: 20px;
+        	margin-left: 70px;
+        	margin-right: 70px;
+        	padding-top: 15px;
+        	padding-bottom: 15px;
+        	font-family: Muli;
+        }
+
+	</style>
+<div class="o-navbar-fluid" style="margin-top: 0px;text-align: center">
+	<div class="o-alert">
+		<a target="_blank" href="">
+  			<p>Comunicado Bebida Fresa Plátano Soja Hacendado</p>
+		</a>
+	</div> 
+<div class="navbar">
+	<div class="row">
+		<img  src="http://static.ideal.es/www/multimedia/201706/23/media/cortadas/mercd-kfM--624x385@Ideal.jpg" width="200">
+	</div>
+  <a href="#home">Conócenos</a>
+  <a href="#news">Supermercados</a>
+  <a href="#contact">Trabaja con nosotros</a>
+  <a href="#contact">Atención al cliente</a>
+</div>
+
+
+{% endblock %}
+

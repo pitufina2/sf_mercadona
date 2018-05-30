@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ClienteDireccion index{% endblock %}
+
+{% block body %}
+    <h1>ClienteDireccion index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Direccion</th>
+                <th>Ciudad</th>
+                <th>Provincia</th>
+                <th>Cp</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cliente_direccion in cliente_direccions %}
+            <tr>
+                <td>{{ cliente_direccion.id }}</td>
+                <td>{{ cliente_direccion.direccion }}</td>
+                <td>{{ cliente_direccion.ciudad }}</td>
+                <td>{{ cliente_direccion.provincia }}</td>
+                <td>{{ cliente_direccion.cp }}</td>
+                <td>
+                    <a href="{{ path('cliente_direccion_show', {'id': cliente_direccion.id}) }}">show</a>
+                    <a href="{{ path('cliente_direccion_edit', {'id': cliente_direccion.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('cliente_direccion_new') }}">Create new</a>
+{% endblock %}
