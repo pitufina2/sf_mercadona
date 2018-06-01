@@ -10,12 +10,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class TiendaController extends Controller
 {
     /**
-     * @Route("/", name="tienda_index")
+     * @Route("/", name="tienda_home")
      */
     public function index()
     {
         return $this->render('tienda/index.html.twig', [
-            'controller_name' => 'TiendaController',
+            
         ]);
     }
 }

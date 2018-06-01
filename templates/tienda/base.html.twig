@@ -1,18 +1,74 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Producto index{% endblock %}
+
 
 
 {% block header %}
 
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="https://www.mercadona.com/estaticos/images/mercadona_logo/es/mercadona-imagotipo-color-300.png" height="40">
+  </a>
+  <form class="form-inline">
+      <i class="fas fa-search"></i><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Buscar productos">Buscar productos</input>
+   
+  
+  </form>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Categorías</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Habituales</a>
+	      </li>
+	    </ul>
+		<i class="fas fa-angle-down"></i>
+		<button type="button" class="btn btn-link">Identifícate</button>
+    	
+
+    	<i class="fas fa-shopping-cart"></i>
+	</div>
+</nav>
 {% endblock %}
 
 
 
 
 {% block body %}
+	
+	<div class="row">
+		<div class="col-md-4">
+			<h1><strong>Nos reinventamos>br>
+				contigo</strong></h1>
+				<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver Productos</a>
+		</div>
+		<div class="col-md-8">
+			<img src= "https://storage.googleapis.com/itg_statics_mimercadona/media/seasons/banners/banner_healthy.jpg" height="40">
+		</div>	
+	</div>	
+
+
+
+<h3>Novedades</h3>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq95z0_rja64u8VSDojv5tvNRlHadS0jedcOtog_9Drtv4UYjR3w" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Ensalada mezcla con <br>
+    	flores <br>
+    	Bol 70 gr.<br>
+    	1,45 Eu.</p>
+  </div>
+</div>
+
+
 
 {% endblock %}
 
@@ -20,6 +76,7 @@
 
 
 {% block footer %}
+
 
 
 
