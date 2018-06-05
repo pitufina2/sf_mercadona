@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Producto;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 /**
@@ -14,8 +15,12 @@ class TiendaController extends Controller
      */
     public function index()
     {
+        $productos = $this->getDoctrine()->getRepository(Producto::class)->findAll();
+
         return $this->render('tienda/index.html.twig', [
+            'productos' => $productos,
             
+
         ]);
     }
 }

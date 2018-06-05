@@ -5,6 +5,53 @@
 {% block body %}
 
 
+		<div class="container">
+			
+				<div class="row">
+					<div class="col-md-4-8">
+						<h3>Nos reinventamos contigo</h3>
+						<br>
+						<br>
+						<br>
+						<br>
+					
+							<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver Productos</a>
+							<br>
+							<br>
+							<br>
+					</div>
+				<div class="col-md-8">
+				</div>
+			</div>	
 
+
+
+
+<h5>Novedades</h5>
+
+		<div class="row">
+			{% for p in productos %}
+				<div class="col-1-5">
+						<div class="card">
+						  	<img class="card-img-top" src="https://prod-mercadona.imgix.net/20180604/16/69416/69416_00_07.jpg">
+						  	<div class="card-body">
+						    	<h6 class="card-title"button type="button" class="btn btn-outline-light"<trong>Ensalada mezcla con<br>
+						     	flores</h6>
+							    <p class="card-text" button type="button" class="btn btn-outline-light">Bol 70 gr</p>
+							    <p class="card-text"button type="button" class="btn btn-outline-light"> {{ p.precio }} </p>
+
+						    	<hr>
+						   		<div class="btn-group-toggle" data-toggle="buttons">
+						  			<label class="btn btn-secondary active">
+						    			<input type="checkbox" checked autocomplete="off"> Añadir al carro
+						  			</label>
+								</div>
+						  	</div>
+						</div>
+					</div>	
+			{% endfor %}
+			
+		</div>
+	</div>			
 {% endblock %}
 

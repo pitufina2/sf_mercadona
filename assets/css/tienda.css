@@ -1,0 +1,12 @@
+body div.imagenfondo {
+	background-image: url("https://www.mercadona.com/estaticos/images/mercadona_logo/es/mercadona-imagotipo-color-300.png" height="40");
+}
+
+
+
+.col-1-5 {
+	width: 18%
+	margin-left:5px;
+	margin-right: 5px;
+	border-spacing:  5px;
+}
