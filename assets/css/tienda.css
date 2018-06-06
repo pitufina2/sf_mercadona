@@ -2,6 +2,16 @@ body div.imagenfondo {
 	background-image: url("https://www.mercadona.com/estaticos/images/mercadona_logo/es/mercadona-imagotipo-color-300.png" height="40");
 }
 
+.col-4-8 h3 a{
+
+background-color: blue;
+color: white;
+}
+.col-4-8  a{
+
+	border-radius: 20px;
+	color:white;
+}
 
 
 .col-1-5 {
